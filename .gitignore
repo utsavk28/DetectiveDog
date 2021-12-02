@@ -2,3 +2,4 @@ client/node_modules
 server/venv
 **/__pycache__
 client/build
+server/.env
