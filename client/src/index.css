@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.App {
+    position: relative;
+    min-height: 98vh;
+}
+
+.content {
+    padding-bottom: 48px;
+}
+
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 0;
+    background-color: rgb(88, 88, 88);
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 28px;
+}
+
+.logo > img {
+    width: 75%;
+}
+
+.search-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+}
+
+.search {
+    margin: 2px;
+    padding: 0 8px;
+    min-width: 75%;
+    height: 36px;
+    border-radius: 24px;
+    border-color: rgb(37, 37, 37);
+}
+
+#btn-search {
+    margin: 0;
+    border-radius: 24px;
+}
+
+.profile {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+}
+
+.profile-img > img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-data {
+    margin: auto 24px;
+    padding: 24px;
+    max-width: 360px;
+}
+
+.profile-data > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* display: inline-block; */
+}
+
+.profile-data > ul > li {
+    display: inline-block;
+    margin: 2px;
+    margin-right: 8px;
+}
+
+.sentiment-div {
+    margin: 24px auto;
+    text-align: center;
+}
+
+.sentiment-bar {
+    text-align: left;
+    position: relative;
+    width: 500px;
+    height: 36px;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin: 4px auto;
+}
+
+.sentiment-bar-inner {
+    width: 70%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: aqua;
+}
+
+.sentiment-bar > span {
+    width: 100%;
+    position: absolute;
+    margin-top: 1px;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.metrics {
+    margin: auto;
+}
+
+.metrics-card-cover {
+    margin: 0 auto;
+    width: fit-content;
+    padding-bottom: 48px;
+}
+
+.metrics-card-cover > .header {
+    text-align: center;
+}
+
+.metric-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: center;
+    margin: auto;
+}
+
+.metric-card {
+    width: 360px;
+    margin: 24px;
+    height: 360px;
+}
+
+.metric-tweets {
+    display: block;
+}
+
+.tweets-panel {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.tweet {
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+}
+
+.tweet > a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 660px) {
+    .sentiment-bar {
+        width: 80%;
+    }
+
+    .profile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        /* margin: 0 auto; */
+        margin-top: 48px;
+    }
+
+    .profile-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sentiment-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 24px;
+        width: 100%;
+    }
+
+    .metric-card {
+        width: 300px;
+        margin: 8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-bar {
+        width: 100%;
+        margin: 4px;
+    }
+
+    .search {
+        width: 80%;
+    }
+}
