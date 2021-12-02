@@ -60,16 +60,16 @@ const Card = ({ heading, piedata }) => {
                                 ? pos_tweets.map((tweet) => {
                                       return (
                                           <Tweet
-                                              text={tweet[0]}
-                                              link={tweet[2]}
+                                              text={tweet['text']}
+                                              link={tweet['url']}
                                           />
                                       );
                                   })
                                 : neg_tweets.map((tweet) => {
                                       return (
                                           <Tweet
-                                              text={tweet[0]}
-                                              link={tweet[2]}
+                                              text={tweet['text']}
+                                              link={tweet['url']}
                                           />
                                       );
                                   })}
