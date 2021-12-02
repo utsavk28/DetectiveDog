@@ -20,7 +20,7 @@ class Sentiment(Resource):
         return {"data": "HelloWorld"}
 
 
-api.add_resource(Sentiment, '/sentiment')
+api.add_resource(Sentiment, '/')
 api.add_resource(SentimentV1, '/sentiment-v1')
 api.add_resource(SentimentV2, '/sentiment-v2')
 

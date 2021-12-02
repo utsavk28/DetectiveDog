@@ -52,3 +52,4 @@ class SentimentV2(Resource):
                 "neg_tweets": neg_tweets
             }
         }
+
