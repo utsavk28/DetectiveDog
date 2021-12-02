@@ -25,7 +25,7 @@ def twitterUserTweetRequest(username):
                                    tweet_fields=['id', 'public_metrics'],
                                    user_fields=['description', 'name', 'id', 'profile_image_url', 'username', 'verified', 'public_metrics']).data
         tweet_res = client.get_users_tweets(
-            id=user_res['id'], max_results=10, tweet_fields=['lang']).data
+            id=user_res['id'], max_results=100, tweet_fields=['lang']).data
         tweet_res = list(filter(lambda x: x['lang'] == 'en', tweet_res))
         tweet_res = list(map(
             lambda x: {"id": x['id'], "text": x['text']}, tweet_res))
