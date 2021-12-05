@@ -1,7 +1,6 @@
 import pickle
 from flask_restful import Resource
-from textblob import TextBlob
-from textblob.sentiments import NaiveBayesAnalyzer
+import gc
 from utils.sentiment_args import sentiment
 from utils.twitter_request import twitterUserTweetRequest
 from utils.model_utils import cleaning_pipeline, predicting_pipeline

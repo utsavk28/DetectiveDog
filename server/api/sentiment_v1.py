@@ -1,6 +1,5 @@
 from flask_restful import Resource
 from textblob import TextBlob
-from textblob.sentiments import NaiveBayesAnalyzer
 from utils.sentiment_args import sentiment
 from utils.twitter_request import twitterUserTweetRequest
 

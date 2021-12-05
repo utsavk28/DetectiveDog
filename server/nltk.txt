@@ -1,4 +1,1 @@
-stopwords
 wordnet
-movie_reviews
-punkt
