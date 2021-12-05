@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import search from '../assets/search.png';
-import { getTwitterProfileSentiment } from '../redux/actions/search';
+import {
+    getTwitterProfileSentiment,
+    startSearch,
+} from '../redux/actions/search';
 
 const Search = ({ username, setUsername }) => {
     const dispatch = useDispatch();
@@ -10,6 +13,7 @@ const Search = ({ username, setUsername }) => {
     };
 
     const handleSubmit = (e) => {
+        dispatch(startSearch());
         e.preventDefault();
         dispatch(getTwitterProfileSentiment(username));
     };
@@ -22,6 +26,7 @@ const Search = ({ username, setUsername }) => {
                     type='text'
                     value={username}
                     onChange={handleChange}
+                    placeholder='Enter Twitter Username '
                 />
                 <button
                     className='btn '

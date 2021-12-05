@@ -1,3 +1,3 @@
-export const SET_SEARCH = 'SET_SEARCH';
+export const START_SEARCH = 'START_SEARCH';
 export const SET_SEARCH_RESULT = 'SET_SEARCH_RESULT';
 export const SEARCH_ERROR = 'SEARCH_ERROR';

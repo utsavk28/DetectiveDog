@@ -1,6 +1,12 @@
 import axios from 'axios';
 import url from '../../utils/api';
-import { SEARCH_ERROR, SET_SEARCH_RESULT } from '../type';
+import { SEARCH_ERROR, SET_SEARCH_RESULT, START_SEARCH } from '../type';
+
+export const startSearch = () => async (dispatch) => {
+    dispatch({
+        type: START_SEARCH,
+    });
+};
 
 export const getTwitterProfileSentiment = (username) => async (dispatch) => {
     try {
@@ -10,22 +16,21 @@ export const getTwitterProfileSentiment = (username) => async (dispatch) => {
             },
         };
         const body = JSON.stringify({ username: username });
-        const res = await axios.post(`${url}/sentiment-v2`, body, config);
+        const res = await axios.post(`${url}/sentiment-v3-2`, body, config);
         dispatch({
             type: SET_SEARCH_RESULT,
             payload: res.data.data,
         });
     } catch (error) {
-        console.log(error.response);
         if (error.response) {
             dispatch({
                 type: SEARCH_ERROR,
-                payload: error.response.data.message,
+                payload: 'Please Check whether the username is correct or not',
             });
         } else {
             dispatch({
                 type: SEARCH_ERROR,
-                payload: 'Something went wrong',
+                payload: 'Something went wrong, Please Try Again Later',
             });
         }
     }

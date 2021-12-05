@@ -1,11 +1,19 @@
 from flask_restful import Resource
 from textblob import TextBlob
 from textblob.sentiments import NaiveBayesAnalyzer
-from .sentiment_args import sentiment
-from .twitter_request import twitterUserTweetRequest
+from utils.sentiment_args import sentiment
+from utils.twitter_request import twitterUserTweetRequest
 
 
 class SentimentV1(Resource):
+    """
+        TextBlob Sentiment Model
+        
+        Testing Score :
+        F1 Score : 0.5994
+        Acc. : 62.24%
+    """
+    
     def get(self):
         return {"data": "HelloWorld"}
 
@@ -16,16 +24,16 @@ class SentimentV1(Resource):
         pos_tweets, neg_tweets = [], []
         n = len(res['tweets'])
         for tweet in res['tweets']:
-            blob = TextBlob(
-                tweet['text'], analyzer=NaiveBayesAnalyzer()).sentiment
-            pos_score += blob.p_pos
-            neg_score += blob.p_neg
+            ps = (TextBlob(tweet['text']).sentiment.polarity/2+0.5)
+            ns = 1-ps
+            pos_score += ps
+            neg_score += ns
 
-            if blob.p_pos >= blob.p_neg:
+            if ps >= ns:
                 pos_tweets.append({
                     "id": tweet['id'],
                     "text": tweet['text'],
-                    'score': blob.p_pos,
+                    'score': ps,
                     "sentiment": "positive",
                     "url": f"https://twitter.com/{args['username']}/status/{tweet['id']}"
                 })
@@ -33,7 +41,7 @@ class SentimentV1(Resource):
                 neg_tweets.append({
                     "id": tweet['id'],
                     "text": tweet['text'],
-                    'score': blob.p_neg,
+                    'score': ns,
                     "sentiment": "negative",
                     "url": f"https://twitter.com/{args['username']}/status/{tweet['id']}"
                 })

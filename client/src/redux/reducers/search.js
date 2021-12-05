@@ -1,6 +1,7 @@
-import { SET_SEARCH, SET_SEARCH_RESULT, SEARCH_ERROR } from '../type';
-
+import { START_SEARCH, SET_SEARCH_RESULT, SEARCH_ERROR } from '../type';
+import notyf from '../../notification';
 const initialState = {
+    loading: false,
     profile: null,
     pos_score: null,
     neg_score: null,
@@ -12,12 +13,18 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     const { type, payload } = action;
     switch (type) {
-        case SET_SEARCH:
+        case START_SEARCH:
+            notyf.open({
+                type: 'info',
+                message: 'Fetching data...',
+            });
             return {
                 ...state,
-                username: payload,
+                loading: true,
+                error: null,
             };
         case SET_SEARCH_RESULT:
+            notyf.success('Found!!!');
             return {
                 ...state,
                 profile: payload.profile,
@@ -28,6 +35,7 @@ const reducer = (state = initialState, action) => {
                 error: null,
             };
         case SEARCH_ERROR:
+            notyf.error(payload);
             return {
                 ...state,
                 profile: null,

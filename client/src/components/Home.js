@@ -6,7 +6,9 @@ import Metrics from './Metrics';
 import { useSelector } from 'react-redux';
 
 const Home = () => {
-    const { username: username2, profile } = useSelector((state) => state.search);
+    const { username: username2, profile } = useSelector(
+        (state) => state.search
+    );
     const [username, setUsername] = useState('');
 
     useEffect(() => {

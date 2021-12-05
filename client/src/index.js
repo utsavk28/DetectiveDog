@@ -12,6 +12,7 @@ import {
     Legend,
 } from 'chart.js';
 
+
 ChartJS.register(ArcElement, Tooltip, Legend, RadialLinearScale);
 
 ReactDOM.render(

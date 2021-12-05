@@ -1,13 +1,20 @@
 from flask_restful import Resource
-from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from .sentiment_args import sentiment
-from .twitter_request import twitterUserTweetRequest
+from utils.sentiment_args import sentiment
+from utils.twitter_request import twitterUserTweetRequest
 
 vader = SentimentIntensityAnalyzer()
 
 
 class SentimentV2(Resource):
+    """
+        Vader Sentiment Model
+        
+        Testing Score :
+        F1 Score : 0.6453
+        Acc. : 65.19%
+    """
+    
     def get(self):
         return {"data": "HelloWorld"}
 
