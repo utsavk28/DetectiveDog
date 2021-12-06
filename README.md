@@ -63,8 +63,8 @@
 ## About the Project
 
 
-This Good Boy sniffs out the sentiment from twitter profile and presents in the elegant way.\
-Or you could as it as Sentiment Analysis on Twitter Profile
+This Good Boy sniffs out the sentiment from Twitter profile and presents it in an elegant way.\
+Or you could also say it as Applying Sentiment Analysis on Twitter Profile and using ChartJs to visualize the result.
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
