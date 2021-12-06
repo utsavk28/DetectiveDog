@@ -46,7 +46,7 @@
     </li>
     <li><a href="#roadmap">  Roadmap</a></li>
     <li><a href="#run-locally">  Run Locally</a></li>
-    <li><a href="#environment-variables"> ➤ Environment Variables</a></li>
+    <li><a href="#environment-variables">  Environment Variables</a></li>
     <li><a href="#authors">  Authors</a></li>
     <li><a href="#contributing"> Contributing</a></li>
     <li><a href="#license"> License</a></li>
