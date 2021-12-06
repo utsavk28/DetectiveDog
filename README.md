@@ -77,27 +77,29 @@ Or you could as it as Sentiment Analysis on Twitter Profile
 ## Tech Stack
 
 **Client:**
-- React
-- Redux
-- Axios
-- ChartJs
-- Notyf
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Axios](https://axios-http.com/)
+- [ChartJs](https://www.chartjs.org/)
+- [Notyf](https://github.com/caroso1222/notyf)
 
 **Server:** 
-- NLTK
-- TextBlob
-- VaderSentiment
-- Sklearn
-- Tweepy
-- Flask Restful API
-- BeautifulSoup
+- [NLTK](https://www.nltk.org/)
+- [TextBlob](https://textblob.readthedocs.io/en/dev/)
+- [VaderSentiment](https://github.com/cjhutto/vaderSentiment)
+- [Sklearn](https://scikit-learn.org/stable/index.html)
+- [Tweepy](https://github.com/tweepy/tweepy)
+- [Twitter API](https://developer.twitter.com/en)
+- [Flask Restful API](https://flask-restful.readthedocs.io/en/latest/)
+- [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png) 
 
 ## Models
-
-
+```
+DataSet Used for Training : [Sentiment140](https://www.kaggle.com/kazanova/sentiment140)
+```
 <table>
 	<tr>
 	<th colspan="2">
@@ -264,6 +266,18 @@ Install dependencies in ```server``` folder.
   source my-project-env/bin/activate
   pip install -r requirements.txt
 ```
+Generate environment variables and fill in the values.
+
+```bash
+  cp .env.example .env
+```
+>  Your  `.env`  is ignored by  `git`, which you can see in  `.gitignore`, and so, it's safe!
+
+Starting Development Server
+
+```bash
+  python main.py
+```
 
 Install dependencies in ```client``` folder.
 
@@ -276,12 +290,11 @@ Install dependencies in ```client``` folder.
   change API url in ./client/src/utils/api.js to your need
 ```
 
-Generate environment variables and fill in the values.
+Starting Client 
 
 ```bash
-  cp .env.example .env
+  npm start
 ```
->  Your  `.env`  is ignored by  `git`, which you can see in  `.gitignore`, and so, it's safe!
 
 
 At the end of this, you should have
@@ -336,9 +349,21 @@ Distributed under the MIT License. See  `LICENSE.txt`  for more information.
 
 ## Acknowledgements
 
- - [3Blue1Brown](https://www.youtube.com/c/3blue1brown)
+ - [PaperSpace Gradient Boosting Blog](https://blog.paperspace.com/gradient-boosting-for-classification/)
+ - [Flask Restful API Intro. & Deployment Blog ](https://medium.com/analytics-vidhya/flask-restful-api-with-heroku-da1ecf3e04b)
+ - [Folder Structure Blog](https://medium.com/analytics-vidhya/folder-structure-for-machine-learning-projects-a7e451a8caaa)
+ - [StackEdit](https://stackedit.io/app#)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)  
+
+
+## Further Reading
+
+ - [Sentiment Analysis using 7 techniques Kaggle](https://www.kaggle.com/parth05rohilla/sentiment-analysis-using-7-different-techniques)
+ - 
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)  
+
 
 ## Related 
 
