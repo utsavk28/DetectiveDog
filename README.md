@@ -241,7 +241,7 @@ Or you could as it as Sentiment Analysis on Twitter Profile
     - [x] Gradient Boosting Classifier
 - [ ] Custom DL Models : 
     - [ ] CNN
-    - [ ] RNN or LSTM
+    - [ ] RNN, LSTM
     - [ ] BERT
 - [ ] Refactoring the WebApp Code
 - [ ] Update Notebooks 
