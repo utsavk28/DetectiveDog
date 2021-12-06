@@ -16,7 +16,7 @@ code {
 
 .App {
     position: relative;
-    min-height: 98vh;
+    min-height: 100vh;
 }
 
 .content {
@@ -191,6 +191,78 @@ code {
 .tweet > a {
     color: white;
     text-decoration: none;
+}
+
+.info-btn {
+    position: absolute;
+    width: fit-content;
+    margin: 0;
+    top: 8px;
+    right: 8px;
+    z-index: 999;
+}
+
+.info-btn > img {
+    /* background-color: white; */
+    width: 36px;
+}
+
+.back-btn {
+    position: absolute;
+    width: fit-content;
+    margin: 0;
+    top: 8px;
+    left: 8px;
+    z-index: 999;
+}
+
+.back-btn > img {
+    /* background-color: white; */
+    width: 36px;
+}
+
+.info-page {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.info-page > h1 {
+    padding-top: 24px;
+}
+
+.model-table-div {
+    overflow-x: auto;
+    padding-bottom: 48px;
+}
+
+#model-table {
+    margin: auto;
+    margin-top: 12px;
+    border: 1px solid white;
+    overflow-x: auto;
+}
+
+#model-table > table.table,
+thead,
+tr,
+th,
+td {
+    border: 1px solid white;
+    border-width: 2px;
+}
+
+#model-table td,
+th {
+    padding: 8px;
+}
+@media screen and (max-width: 1200px) {
+    .info-page {
+        margin: 24px;
+    }
 }
 
 @media screen and (max-width: 660px) {

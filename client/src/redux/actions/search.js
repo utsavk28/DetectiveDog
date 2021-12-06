@@ -15,8 +15,7 @@ export const getTwitterProfileSentiment = (username) => async (dispatch) => {
                 'Content-Type': 'application/json',
             },
         };
-        const body = JSON.stringify({ username: username });
-        const res = await axios.post(`${url}/sentiment-v2`, body, config);
+        const res = await axios.get(`${url}/sentiment-v2/${username}`, config);
         dispatch({
             type: SET_SEARCH_RESULT,
             payload: res.data.data,
