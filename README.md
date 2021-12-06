@@ -379,8 +379,8 @@ Distributed under the MIT License. See  `LICENSE.txt`  for more information.
 
 Here are some related projects
 
-[Machine-Learning-Projects](https://github.com/aswintechguy/Machine-Learning-Projects)
-[ML-ProjectKart](https://github.com/prathimacode-hub/ML-ProjectKart)
+- [Machine-Learning-Projects](https://github.com/aswintechguy/Machine-Learning-Projects)
+- [ML-ProjectKart](https://github.com/prathimacode-hub/ML-ProjectKart)
 
   
 <!-- MARKDOWN LINKS & IMAGES -->
