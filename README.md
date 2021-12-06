@@ -217,6 +217,79 @@ Or you could also say it as Applying Sentiment Analysis on Twitter Profile and u
 
 ### Model Results
 
+> Following are the score for the username "elonmusk"
+
+<table>
+	<tr>
+	<th >
+		Model
+	</th>
+	<th >
+		API
+	</th>
+	<th colspan="2" >
+		Score 
+	</th>
+   </tr>
+  <tr>
+    <th>Name</th>
+       <th>Version</th>
+    <th>Positive Score </th>
+    <th>Negative Score</th>
+  </tr>
+  <tr>
+	  <td>Textblob</td>
+	  	 <td>v1</td>
+	  <td>61.69%</td>
+	  <td>38.31%</td>
+  </tr>
+    <tr>
+	  <td>VaderSentiment</td>
+	  <td>v2</td>
+	  <td>69.71%</td>
+	  <td>32.09%</td>
+  </tr>
+    <tr>
+	  <td rowspan="2" >Logistic Regression </td>
+	  <td>v3-1</td>
+	  <td>72.06%</td>
+	  <td>27.94%</td>
+  </tr>
+     <tr>
+	  <td>v3-2</td>
+	  <td>74.07%</td>
+	  <td>25.93%</td>
+  </tr>
+  <tr>
+	  <td rowspan="2" >Bernoulli Naive Bayes </td>
+	  <td>v4-1</td>
+	  <td>68.40%</td>
+	  <td>31.60%</td>
+  </tr>
+     <tr>
+	  <td>v4-2</td>
+	  <td>72.21%</td>
+	  <td>27.79%</td>
+  </tr>
+    <tr>
+	  <td rowspan="2" >Multinomial Naive Bayes </td>
+	  <td>v4-3</td>
+	  <td>67.44%</td>
+	  <td>32.56%</td>
+  </tr>
+     <tr>
+	  <td>v4-4</td>
+	  <td>62.47%</td>
+	  <td>37.43%</td>
+  </tr>
+     <tr>
+	  <td rowspan="2">Gradient Boosting Classifier </td>
+	  <td>v5-1</td>
+	  <td>64.86%</td>
+	  <td>35.14%</td>
+  </tr>
+
+</table>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
