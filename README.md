@@ -20,11 +20,11 @@
   <p align="center">
     Twitter Profile Sentiment Analyzer 
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://detective-dog.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/utsavk28/DetectiveDog/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/utsavk28/DetectiveDog/issues">Request Feature</a>
   </p>
 </div>
 
