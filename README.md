@@ -349,9 +349,18 @@ Distributed under the MIT License. See  `LICENSE.txt`  for more information.
 
 ## Acknowledgements
 
+ - Pre-Processing :
+ 	- [Analytics Vidhya Blog](https://medium.com/analytics-vidhya/pre-processing-tweets-for-sentiment-analysis-a74deda9993e)
+ 	- [Kaggle NLP 101 Preprocessing](https://www.kaggle.com/redwankarimsony/nlp-101-tweet-sentiment-analysis-preprocessing)
+ 	- [Medium NLP Preprocessing Blog](https://medium.com/swlh/nlp-text-preprocessing-techniques-ea34d3f84de4)
+ - [Machine-Learning-Projects Repo -> Twitter Sentiment Analysis ](https://github.com/aswintechguy/Machine-Learning-Projects/tree/master/Twitter%20Sentiment%20Analysis%20-%20NLP)
+ - [ML-ProjectKart -> IMDB Sentiment Analysis](https://github.com/prathimacode-hub/ML-ProjectKart/tree/main/IMDB%20Sentiment%20Analysis)
  - [PaperSpace Gradient Boosting Blog](https://blog.paperspace.com/gradient-boosting-for-classification/)
  - [Flask Restful API Intro. & Deployment Blog ](https://medium.com/analytics-vidhya/flask-restful-api-with-heroku-da1ecf3e04b)
  - [Folder Structure Blog](https://medium.com/analytics-vidhya/folder-structure-for-machine-learning-projects-a7e451a8caaa)
+ - [Regex Visualizer](https://regexr.com/)
+ - [Regex CheatSheet](https://www.rexegg.com/regex-quickstart.html)
+ - [Word Embedding Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html#introduction)
  - [StackEdit](https://stackedit.io/app#)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)  
@@ -360,7 +369,8 @@ Distributed under the MIT License. See  `LICENSE.txt`  for more information.
 ## Further Reading
 
  - [Sentiment Analysis using 7 techniques Kaggle](https://www.kaggle.com/parth05rohilla/sentiment-analysis-using-7-different-techniques)
- - 
+ - [Twitter Sentiment Analysis using Word2Vec Word Embedding](https://towardsdatascience.com/predicting-tweet-sentiment-with-word2vec-embeddings-67aace9b019d)
+ - [Deep Convolutional Neural Network for Sentiment Analysis](https://machinelearningmastery.com/develop-word-embedding-model-predicting-movie-review-sentiment/)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)  
 
@@ -369,7 +379,8 @@ Distributed under the MIT License. See  `LICENSE.txt`  for more information.
 
 Here are some related projects
 
-[Awesome README](https://github.com/matiassingers/awesome-readme)
+[Machine-Learning-Projects](https://github.com/aswintechguy/Machine-Learning-Projects)
+[ML-ProjectKart](https://github.com/prathimacode-hub/ML-ProjectKart)
 
   
 <!-- MARKDOWN LINKS & IMAGES -->
