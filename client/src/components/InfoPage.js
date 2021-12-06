@@ -132,6 +132,20 @@ const InfoPage = () => {
                     </table>
                 </div>
             </div>
+            <div className='my-2'>
+                <p>
+                    Check out the{' '}
+                    <a
+                        href='https://github.com/utsavk28/DetectiveDog'
+                        target='_blank'
+                        rel='noreferrer'
+                        style={{ textDecoration: 'none' }}
+                    >
+                        repo
+                    </a>{' '}
+                    for more details
+                </p>
+            </div>
         </div>
     );
 };
