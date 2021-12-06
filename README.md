@@ -98,7 +98,7 @@ Or you could also say it as Applying Sentiment Analysis on Twitter Profile and u
 
 ## Models
 ```
-DataSet Used for Training : [Sentiment140](https://www.kaggle.com/kazanova/sentiment140)
+DataSet Used for Training : ![Sentiment140](https://www.kaggle.com/kazanova/sentiment140)
 ```
 <table>
 	<tr>
