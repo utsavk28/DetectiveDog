@@ -71,7 +71,7 @@ Or you could also say it as Applying Sentiment Analysis on Twitter Profile and u
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://utsavk28.github.io/HostedAssets/DetectiveDog/desktop1.png)
 
   ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 ## Tech Stack
