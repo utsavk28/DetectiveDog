@@ -1,7 +1,5 @@
 import pickle
 from flask_restful import Resource
-import gc
-from utils.sentiment_args import sentiment
 from utils.twitter_request import twitterUserTweetRequest
 from utils.model_utils import cleaning_pipeline, predicting_pipeline
 import pandas as pd
@@ -18,19 +16,15 @@ class SentimentV4_2(Resource):
         - Lemmatizatised
 
         Training Score :
-        F1 Score : .08052
-        Acc. : 80.3574%
+        F1 Score : 0.8052
+        Acc. : 80.36%
         Testing : 
         F1 Score : 0.7733
-        Acc. : 76.9816%
+        Acc. : 76.98%
     """
 
-    def get(self):
-        return {"data": "HelloWorld"}
-
-    def post(self):
-        args = sentiment.parse_args()
-        res = twitterUserTweetRequest(args['username'])['data']
+    def get(self,username):
+        res = twitterUserTweetRequest(username)['data']
         pos_score, neg_score = 0, 0
         pos_tweets, neg_tweets = [], []
         n = len(res['tweets'])
@@ -51,7 +45,7 @@ class SentimentV4_2(Resource):
                     "text": tweets[i]['text'],
                     'score': ps,
                     "sentiment": "positive",
-                    "url": f"https://twitter.com/{args['username']}/status/{tweets[i]['id']}"
+                    "url": f"https://twitter.com/{username}/status/{tweets[i]['id']}"
                 })
             else:
                 neg_tweets.append({
@@ -59,7 +53,7 @@ class SentimentV4_2(Resource):
                     "text": tweets[i]['text'],
                     'score': ns,
                     "sentiment": "negative",
-                    "url": f"https://twitter.com/{args['username']}/status/{tweets[i]['id']}"
+                    "url": f"https://twitter.com/{username}/status/{tweets[i]['id']}"
                 })
         pos_score /= n
         neg_score /= n

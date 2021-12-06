@@ -21,22 +21,19 @@ load_dotenv()
 
 class Sentiment(Resource):
     def get(self):
-        return {"data": "HelloWorld"}
-
-    def post(self):
-        return {"data": "HelloWorld"}
+        return {"data": "Welcome to Detective Dog - Twitter Profile Sentiment Analyzer"}
 
 
 api.add_resource(Sentiment, '/')
-api.add_resource(SentimentV1, '/sentiment-v1')
-api.add_resource(SentimentV2, '/sentiment-v2')
-api.add_resource(SentimentV3_1, '/sentiment-v3-1')
-api.add_resource(SentimentV3_2, '/sentiment-v3-2')
-api.add_resource(SentimentV4_1, '/sentiment-v4-1')
-api.add_resource(SentimentV4_2, '/sentiment-v4-2')
-api.add_resource(SentimentV4_3, '/sentiment-v4-3')
-api.add_resource(SentimentV4_4, '/sentiment-v4-4')
-api.add_resource(SentimentV5_1, '/sentiment-v5-1')
+api.add_resource(SentimentV1, '/sentiment-v1/<string:username>')
+api.add_resource(SentimentV2, '/sentiment-v2/<string:username>')
+api.add_resource(SentimentV3_1, '/sentiment-v3-1/<string:username>')
+api.add_resource(SentimentV3_2, '/sentiment-v3-2/<string:username>')
+api.add_resource(SentimentV4_1, '/sentiment-v4-1/<string:username>')
+api.add_resource(SentimentV4_2, '/sentiment-v4-2/<string:username>')
+api.add_resource(SentimentV4_3, '/sentiment-v4-3/<string:username>')
+api.add_resource(SentimentV4_4, '/sentiment-v4-4/<string:username>')
+api.add_resource(SentimentV5_1, '/sentiment-v5-1/<string:username>')
 
 if __name__ == "__main__":
     app.run(debug=True)
