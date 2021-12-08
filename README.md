@@ -208,10 +208,10 @@ Or you could also say it as Applying Sentiment Analysis on Twitter Profile and u
   </tr>
      <tr>
 	  <td>TF-IDF { min_df=5 } & Lemmatization Used . Gradient Boosting Parameters : {lr=1.25, n=300, depth=15}</td>
-	  <td>-</td>
-	  <td>-</td>
-	  <td>-</td>
-	  <td>-</td>
+	  <td>83.72%</td>
+	  <td>0.8410</td>
+	  <td>76.89%</td>
+	  <td>0.7747</td>
   </tr>
 </table>
 
