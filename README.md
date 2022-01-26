@@ -148,7 +148,7 @@ Or you could also say it as Applying Sentiment Analysis on Twitter Profile and u
   </tr>
     <tr>
 	  <td rowspan="2" >Logistic Regression </td>
-	  <td>Bag of words & Lemmatization Used</td>
+	  <td>Count Vect. & Lemmatization Used</td>
 	  <td>79.58%</td>
 	  <td>0.8008</td>
 	  <td>77.92%</td>
@@ -165,7 +165,7 @@ Or you could also say it as Applying Sentiment Analysis on Twitter Profile and u
   </tr>
   <tr>
 	  <td rowspan="2" >Bernoulli Naive Bayes </td>
-	  <td>Bag of words & Lemmatization Used</td>
+	  <td>Count Vect. & Lemmatization Used</td>
 	  <td>80.36%</td>
 	  <td>0.8051</td>
 	  <td>76.98%</td>
@@ -182,7 +182,7 @@ Or you could also say it as Applying Sentiment Analysis on Twitter Profile and u
   </tr>
     <tr>
 	  <td rowspan="2" >Multinomial Naive Bayes </td>
-	  <td>Bag of words & Lemmatization Used</td>
+	  <td>Count Vect. & Lemmatization Used</td>
 	  <td>80.37%</td>
 	  <td>0.8020</td>
 	  <td>76.91%</td>
